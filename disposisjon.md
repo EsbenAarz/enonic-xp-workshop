@@ -19,20 +19,23 @@ Intro til Enonic XP: eXperience Platform
   - Mappestruktur
 - Sette opp et prosjekt. Generere med toolbox.sh.
   - Mappestruktur
-  - Controller, XML-konfig (skjema), template
+  - Controller, XML-konfig (skjema), template (html)
 - Page
   - CSS
   - Meny
-- Layout
-- Mixins
+- Content-type
+  - Landing Page
 - Parts
   - Eye catcher
-  - Gallery
-  - Social icons (eksempel på konfig med uspesifisert antall konfig-ting)
   - The team
     - Innhold
+  - Oppgaver/Hvis vi får tid
+    - Gallery
+    - Social icons (eksempel på konfig med uspesifisert antall konfig-ting)
+- Layout
 - Site
   - Konfigurering
+- Mixins
 
 Ekstra:
 - Part med post to self (tilbakemeldingsskjema, kommentarer)
