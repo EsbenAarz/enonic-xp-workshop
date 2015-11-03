@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-  <config />
+  <config>
+    <field-set name="info">
+      <label>Config</label>
+      <items>
+        <input type="TextLine" name="googleUATrackingId">
+          <label>Google Analyctics ID</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input type="TextLine" name="facebookAppId">
+          <label>Facebook applikation ID</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+      </items>
+    </field-set>
+  </config>
 </site>

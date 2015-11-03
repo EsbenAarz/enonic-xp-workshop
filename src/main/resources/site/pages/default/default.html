@@ -23,6 +23,34 @@
 </head>
 
 <body>
+  <script data-th-if="${googleUATrackingId}" th:inline="javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', /*[[${googleUATrackingId}]]*/, 'auto'); // UA-67905905-1
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Facebook Integration -->
+  <div id="fb-root"></div>
+  <script data-th-if="${facebookAppId}" th:inline="javascript">
+    window.fbAsyncInit = function() {
+    FB.init({
+      appId      : /*[[${facebookAppId}]]*/, // 1642420369303236
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+    };
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div class="navigation top-nav outer inverted">
     <div class="inner">
       <nav class="nav-collapse">

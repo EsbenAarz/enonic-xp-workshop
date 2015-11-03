@@ -11,6 +11,9 @@ exports.get = function(req) {
 
   var siteConfig = site.data.siteConfig;
 
+  var googleUATrackingId = siteConfig.config['googleUATrackingId'] || null;
+  var facebookAppId = siteConfig.config['facebookAppId'] || null;
+
   // Head title
   var pageTitle = content['displayName'];
 
@@ -22,6 +25,8 @@ exports.get = function(req) {
       mainRegion: mainRegion,
       footerRegion: footerRegion,
       sitePath: site['_path'],
+      googleUATrackingId: googleUATrackingId,
+      facebookAppId: facebookAppId,
       menuItems: menuItems,
       pageTitle: pageTitle
   };
