@@ -1,0 +1,10 @@
+<layout>
+  <display-name>Four columns</display-name>
+  <config/>
+  <regions>
+    <region name="one"/>
+    <region name="two"/>
+    <region name="three"/>
+    <region name="four"/>
+  </regions>
+</layout>
