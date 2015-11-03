@@ -25,6 +25,7 @@ Intro til Enonic XP: eXperience Platform
   - Meny
 - Content-type
   - Landing Page
+- Mixins (skal bruke linkUrl mixin i eyecatcher)
 - Parts
   - Eye catcher
   - The team
@@ -35,7 +36,6 @@ Intro til Enonic XP: eXperience Platform
 - Layout
 - Site
   - Konfigurering
-- Mixins
 
 Ekstra:
 - Part med post to self (tilbakemeldingsskjema, kommentarer)
