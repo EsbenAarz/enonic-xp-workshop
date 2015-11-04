@@ -1,0 +1,18 @@
+<part>
+  <display-name>Gallery</display-name>
+  <config>
+    <field-set name="config">
+      <label>Config</label>
+      <items>
+        <input type="ContentSelector" name="imageFolder">
+          <label>Image folder</label>
+          <occurrences minimum="1" maximum="1"/>
+          <config>
+            <relationship-type>system:reference</relationship-type>
+            <allow-content-type>base:folder</allow-content-type>
+          </config>
+        </input>
+      </items>
+    </field-set>
+  </config>
+</part>
